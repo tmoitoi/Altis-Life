@@ -8,7 +8,7 @@
 */
 private["_unit","_id","_uid","_name"];
 _unit = SEL(_this,0);
-if(isNull _unit) exitWith {};
+if(isNil "_unit" || isNull _unit) exitWith {};
 _id = SEL(_this,1);
 _uid = SEL(_this,2);
 _name = SEL(_this,3);
